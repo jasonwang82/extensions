@@ -1,0 +1,40 @@
+id = "codebuddy"
+name = "CodeBuddy"
+version = "0.1.0"
+schema_version = 1
+authors = ["Tencent AI <support@codebuddy.ai>"]
+description = "Tencent AI's CodeBuddy - AI-powered coding assistant"
+repository = "https://github.com/jasonwang82/extensions"
+
+[agent_servers.CodeBuddy]
+name = "CodeBuddy"
+
+[agent_servers.CodeBuddy.targets.darwin-aarch64]
+archive = "https://registry.npmjs.org/@tencent-ai/codebuddy-code/-/codebuddy-code-2.8.3.tgz"
+cmd = "node"
+args = ["./package/bin/codebuddy", "--acp"]
+env = { CODEBUDDY_DISABLE_AUTO_UPDATE = "1" }
+
+[agent_servers.CodeBuddy.targets.darwin-x86_64]
+archive = "https://registry.npmjs.org/@tencent-ai/codebuddy-code/-/codebuddy-code-2.8.3.tgz"
+cmd = "node"
+args = ["./package/bin/codebuddy", "--acp"]
+env = { CODEBUDDY_DISABLE_AUTO_UPDATE = "1" }
+
+[agent_servers.CodeBuddy.targets.linux-aarch64]
+archive = "https://registry.npmjs.org/@tencent-ai/codebuddy-code/-/codebuddy-code-2.8.3.tgz"
+cmd = "node"
+args = ["./package/bin/codebuddy", "--acp"]
+env = { CODEBUDDY_DISABLE_AUTO_UPDATE = "1" }
+
+[agent_servers.CodeBuddy.targets.linux-x86_64]
+archive = "https://registry.npmjs.org/@tencent-ai/codebuddy-code/-/codebuddy-code-2.8.3.tgz"
+cmd = "node"
+args = ["./package/bin/codebuddy", "--acp"]
+env = { CODEBUDDY_DISABLE_AUTO_UPDATE = "1" }
+
+[agent_servers.CodeBuddy.targets.windows-x86_64]
+archive = "https://registry.npmjs.org/@tencent-ai/codebuddy-code/-/codebuddy-code-2.8.3.tgz"
+cmd = "node"
+args = ["./package/bin/codebuddy", "--acp"]
+env = { CODEBUDDY_DISABLE_AUTO_UPDATE = "1" }
