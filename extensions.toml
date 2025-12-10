@@ -520,7 +520,7 @@ version = "0.2.5"
 
 [codebuddy]
 submodule = "extensions/codebuddy"
-version = "2.9.0"
+version = "2.16.0"
 
 [codely-theme]
 submodule = "extensions/codely-theme"
